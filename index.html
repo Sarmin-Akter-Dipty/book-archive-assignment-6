@@ -12,12 +12,24 @@
 </head>
 
 <body>
+    <!-- Books search -->
 
+    <div class="container">
+        <h1 class="text-center text-info mt-4">Search your favorite Book</h1>
+        <!-- Input Box -->
+        <div class="d-flex mx-auto mt-4">
+            <input type="text" class="form-control me-2" placeholder="Search the Book you want" id="search-field" />
+            <button onclick="searchBook()" id="details" class="btn btn-dark">Search</button>
+        </div>
+        <!-- total book result -->
+        <h2 id="total-result" class="mt-5 text-center"></h2>
+    </div>
 
-    <!-- js links -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <!-- Books search result -->
+    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+    </div>
+
+    <!-- js link -->
     <script src="book.js"></script>
 </body>
 
